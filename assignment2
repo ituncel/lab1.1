@@ -1,0 +1,8 @@
+age = bool(input('Are you a cigarette addict older than 75 years old? Yes or No :') == 'Yes')
+chronic = bool(input('Do you have a severe chronic disease? :Yes or No :') == 'Yes')
+immune = bool(input('Is your immune system too weak? Yes or No :') == 'Yes')
+
+if age or chronic or immune :
+print("You are in the risky group")
+else:
+print("You are not in risky group")
