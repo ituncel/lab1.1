@@ -1,0 +1,31 @@
+Number = eval(input("Please Enter Your Number : "))
+if Number  < 0 :
+    print('Please Enter Pozitif Number')
+    Number = eval(input("Please Enter Your Number : "))
+if type(Number)==float:  
+    print('Please Enter Integer Number')
+    Number = eval(input("Please Enter Your Number : "))
+if type(Number) == str:  
+    print('Do not use any entries other than numeric values')
+    Number = eval(input("Please Enter Your Number : "))
+    
+
+Sum = 0
+count = 0 
+Temp = Number 
+
+while Temp > 0:
+           count = count + 1
+           Temp = Temp // 10
+ 
+Temp = Number
+while Temp > 0:
+           Reminder = Temp % 10
+           Sum = Sum + (Reminder ** count)
+           Temp //= 10
+
+
+if Number == Sum:
+           print("{} is Armstrong Number.".format(Number))
+else:
+           print("{} is Not a Armstrong Number.".format(Number))
