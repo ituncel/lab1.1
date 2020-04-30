@@ -1,9 +1,9 @@
 my_list = []
-for n in range(2,101):
+for num in range(2,101):
    
-    for x in range(2,n):
-        if (n % x) == 0:
+    for x in range(2,num):
+        if (num % x) == 0:
              break
     else:  
-        my_list.append(n)
+        my_list.append(num)
 print (my_list)
