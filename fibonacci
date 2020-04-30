@@ -1,0 +1,17 @@
+my_list = []
+number = int(input("Enter a number"))
+i = 0
+first_num = 0
+second_num = 1
+while i < number:
+   
+   
+    fibo = first_num +second_num
+    first_num = second_num
+    second_num = fibo
+    my_list.append(fibo)
+
+    if fibo == 55:
+        break
+print(my_list)  
+i= i+1
